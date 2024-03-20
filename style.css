@@ -1,0 +1,98 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; /* Set the height of the container */
+  background-color: rgb(247, 207, 156);
+}
+
+.divider {
+  flex: 1; /* Distribute the space equally between the dividers */
+  border-right: 1px dotted black;
+  padding: 5%;
+}
+
+#login{
+  padding: 10%;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  border: 2px;
+}
+#email{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#signup{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 0.875rem; /* equivalent to text-sm */
+  outline: none;
+  border: none;
+  border-radius: 9999px; /* equivalent to rounded-full for rounded corners */
+  font-weight: 600; /* equivalent to font-semibold */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 1px rgba(0, 0, 0, 0.1); /* equivalent to shadow-sm */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 2.5rem; /* equivalent to h-10 */
+  padding: 0.5rem 1rem; /* equivalent to px-4 py-2 */
+  background-color: black;
+  color: aliceblue;
+}
+
+#policy{
+  color: aliceblue;
+  padding-left: 15px;
+  text-align: center;
+  font-size:x-small;
+}
+img{
+  padding-left: 5px;
+}
+
+footer{
+  background-color: rgb(44, 43, 43);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  height: 40vh;
+}
+
+.sections{
+  flex: 1; /* Distribute the space equally between the dividers */
+  border-right: 1px dotted black;
+  padding: 3%;
+}
+
+#website{
+  color: aliceblue;
+}
+#linkedin{
+  color: rgb(247, 207, 156);;
+}
+#instagram{
+  color: rgb(247, 207, 156);;
+}
+#mail{
+  color: aliceblue;
+}
+
+#socialmedia{
+  text-align: right;
+}
+#all-about{
+  text-align: left;
+  height: auto;
+}
+.list{
+  list-style-type: none;
+}
+
+
