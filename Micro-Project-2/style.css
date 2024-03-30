@@ -1,0 +1,146 @@
+/* Common styles for all screen sizes */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.extra-button button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .container {
+      flex-wrap: wrap;
+  }
+  
+  .logo {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  .menu {
+      flex-basis: 100%;
+      justify-content: center;
+  }
+  
+  .menu li {
+      margin: 0 10px;
+  }
+  
+  .search-bar {
+      flex-basis: 100%;
+  }
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between boxes */
+}
+
+.box {
+  width: calc(25% - 20px); /* Adjust width of boxes (minus margins) */
+  padding: 20px;
+  margin: 0 10px; /* Adjust margins between boxes */
+  background-color: #f0f0f0;
+}
+
+.container-3{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.con{
+  flex: 1;
+  border-right: 1px dotted black;
+  padding: 5%;
+}
+.con-1{
+  display:flex;
+  flex-direction: column;
+}
+.boxes{
+  width: calc(25% - 20px); /* Adjust width of boxes (minus margins) */
+  padding: 20px;
+  margin: 0 10px; /* Adjust margins between boxes */
+  background-color: #f0f0f0;
+}
