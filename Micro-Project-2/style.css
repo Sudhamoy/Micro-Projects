@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: rgb(96, 77, 207);
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensure the navbar is above other content */
@@ -112,35 +112,177 @@ nav {
   }
 }
 
+.container-1{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  p{
+    align-items: right;
+    background-color: #E5D8FF;
+    height: 300px;
+    border-radius: 11px;
+    text-align: justify;
+    padding: 20px;
+    margin-right: 60px;
+  }
+  img{
+    align-items: left;
+    margin-left: 70px;
+    border-radius: 11px;
+    height: 335px;
+  }
+}
+
+
+
+/* .content-1{
+  background-color: #E5D8FF;
+  margin: 0px;
+} */
+
 .container-2 {
   display: flex;
   justify-content: space-between; /* Adjust spacing between boxes */
 }
 
-.box {
-  width: calc(25% - 20px); /* Adjust width of boxes (minus margins) */
+.boxes-1{
+  background-color: #929DFF;
+  color: white;
+  width: 200px;
   padding: 20px;
-  margin: 0 10px; /* Adjust margins between boxes */
-  background-color: #f0f0f0;
+  /* width: 337px;
+  height: 145.48px;
+  margin-left: 101px;
+  margin-top: 933px;
+  border: solid;
+  border-radius: 11px; */
+  border: solid;
+  border-radius: 11px;
+  margin-left: 60px;
+  box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.4);
+  
 }
+.boxes-2{
+  background-color:#734CF2;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border: solid;
+  border-radius: 11px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+}
+.boxes-3{
+  background-color: #D288FF;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border: solid;
+  border-radius: 11px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+}
+.boxes-4{
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border: solid;
+  border-radius: 11px;
+  margin-right: 60px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+
 
 .container-3{
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  background-color: #483EFF;
+  margin: 70px;
+  border-radius: 11px;
+  position: relative;
 }
-.con{
+/* .con{
   flex: 1;
   border-right: 1px dotted black;
   padding: 5%;
-}
+} */
 .con-1{
   display:flex;
   flex-direction: column;
+  margin-left: 30px;
+  margin-top: 15px;
+  height: 10px;
+  align-items: center;
 }
-.boxes{
-  width: calc(25% - 20px); /* Adjust width of boxes (minus margins) */
+.con-2{
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 700px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  height: 200px;
+}
+.box-1{
   padding: 20px;
-  margin: 0 10px; /* Adjust margins between boxes */
-  background-color: #f0f0f0;
+  background-color: #BCE0F6;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.box-2{
+  padding: 20px;
+  background-color: #483EFF;
+  color: white;
+  width: 200px;
+  text-align: center;
+  border: 2px ;
+  border-color: #FFFFFF;
+  border-radius: 10px;
+  border-style: solid;
+  margin: 30px 0px;
+}
+.box-3{
+  padding: 20px;
+  background-color: #483EFF;
+  color: white;
+  width: 200px;
+  text-align: center;
+  border: 2px ;
+  border-color: #FFFFFF;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+#submitBtn{
+  position: absolute; /* Position the button absolutely */
+  bottom: 10px; /* Distance from the bottom */
+  right: 10px; /* Distance from the right */
+  background-color: #000000; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border radius to create rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  overflow: hidden; /* Ensure the arrow stays within the button */
+}
+#submitBtn:hover{
+  background-color: black;
+}
+#submitBtn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1px; /* Adjust the right position of the arrow */
+  width: 0;
+  height: 0;
+  border: 8px solid transparent; /* Adjust the size of the arrow */
+  border-left-color: #fff; /* Arrow color */
+  transform: translateY(-70%) rotate(-2deg); /* Rotate the arrow */
 }
