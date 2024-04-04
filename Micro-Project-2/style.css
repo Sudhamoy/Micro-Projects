@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+
 /* Common styles for all screen sizes */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
 }
 
 nav {
@@ -21,6 +24,9 @@ nav {
 .logo {
   color: #fff;
   font-size: 24px;
+  font-family: "Delius Unicase", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .menu {
@@ -28,6 +34,10 @@ nav {
   padding: 0;
   margin: 0;
   display: flex;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 .menu li {
@@ -60,13 +70,31 @@ nav {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  position: relative;
 }
 
-.search-bar input[type="text"] {
+/* .search-bar input[type="search"] {
   padding: 8px;
-  border: none;
+  border: 1px solid;
   border-radius: 5px;
 }
+
+.search-bar input[type="search"]::placeholder {
+  color: #999; /
+} */
+
+@media disabled{
+  .search-bar::before {
+    content: "\1F50D"; /* Unicode character for search symbol */
+    font-size: 18px;
+    color: #666; /* Adjust color as needed */
+    position: absolute;
+    left: 10px; /* Adjust left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 
 .search-bar button {
   padding: 8px 12px;
@@ -77,14 +105,35 @@ nav {
   cursor: pointer;
 }
 
-.extra-button button {
-  padding: 8px 12px;
-  border: none;
-  background-color: #555;
-  color: #fff;
-  border-radius: 5px;
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, .5);
+  border-color: rgba(255, 255, 255, .1);
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
   cursor: pointer;
 }
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
@@ -152,13 +201,7 @@ nav {
   color: white;
   width: 200px;
   padding: 20px;
-  /* width: 337px;
-  height: 145.48px;
-  margin-left: 101px;
-  margin-top: 933px;
-  border: solid;
-  border-radius: 11px; */
-  border: solid;
+  border: none;
   border-radius: 11px;
   margin-left: 60px;
   box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.4);
@@ -169,7 +212,7 @@ nav {
   color: white;
   padding: 20px;
   width: 200px;
-  border: solid;
+  border: none;
   border-radius: 11px;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
 }
@@ -178,7 +221,7 @@ nav {
   color: white;
   padding: 20px;
   width: 200px;
-  border: solid;
+  border: none;
   border-radius: 11px;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
 }
@@ -187,7 +230,7 @@ nav {
   color: white;
   padding: 20px;
   width: 200px;
-  border: solid;
+  border: none;
   border-radius: 11px;
   margin-right: 60px;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
@@ -271,18 +314,13 @@ nav {
   border-radius: 5px; /* Add border radius to create rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
   overflow: hidden; /* Ensure the arrow stays within the button */
+  margin-right: 55px;
+  margin-bottom: 25px;
 }
-#submitBtn:hover{
-  background-color: black;
+
+button svg{
+  vertical-align: middle;
+  margin-left: 3px;
+  padding-left: 2px;
 }
-#submitBtn::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 1px; /* Adjust the right position of the arrow */
-  width: 0;
-  height: 0;
-  border: 8px solid transparent; /* Adjust the size of the arrow */
-  border-left-color: #fff; /* Arrow color */
-  transform: translateY(-70%) rotate(-2deg); /* Rotate the arrow */
-}
+
