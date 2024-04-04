@@ -245,6 +245,7 @@ button, input, optgroup, select, textarea {
   background-color: #483EFF;
   margin: 70px;
   border-radius: 11px;
+  height: 330px;
   position: relative;
 }
 /* .con{
@@ -269,7 +270,7 @@ button, input, optgroup, select, textarea {
   margin-left: 40px;
   margin-top: 13px;
   margin-bottom: 10px;
-  height: 200px;
+  height: 270px;
 }
 .box-1{
   padding: 20px;
